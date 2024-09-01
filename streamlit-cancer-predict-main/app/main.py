@@ -1,5 +1,11 @@
-import os
-os.system('pip install plotly')
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+install('plotly')
+
 
 import streamlit as st
 import pickle
