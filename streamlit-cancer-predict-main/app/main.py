@@ -1,8 +1,12 @@
+import os
+os.system('pip install plotly')
+
 import streamlit as st
 import pickle
 import pandas as pd
 import plotly.graph_objects as go
 import numpy as np
+
 
 
 def get_clean_data():
